@@ -7,7 +7,7 @@ $(function () {
 /*
 
 $.ajax({
-    url: "getData.php",
+    url: "index.php",
     data:{
         format:"json"
         },

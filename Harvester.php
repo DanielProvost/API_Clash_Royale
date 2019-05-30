@@ -15,7 +15,9 @@ class Harvester
         return $this->url = $url;
     }
 
+
     public function thrawExec($finUrl){
+
         $url = $this->getUrl('');
         $this->exec($url, $output);
         return $output;
@@ -33,5 +35,5 @@ class Harvester
  
 }
 
-?>
+
 

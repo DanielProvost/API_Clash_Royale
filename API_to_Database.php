@@ -5,7 +5,7 @@ include Harvester.php;
 
 
 
-class AddDataBase {
+class APItoDatabase {
 
 
 
