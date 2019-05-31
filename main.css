@@ -1,0 +1,24 @@
+body{
+    width:1200px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 5%;
+}
+caption{
+    margin-bottom: 5%;
+}
+table
+{
+    width:400px;
+    border:2px lightblue solid;
+    margin:0 auto;
+}
+tr,
+th{
+    width:150px;
+    text-align: center;
+}
+th{
+    background-color: lightblue;
+}
