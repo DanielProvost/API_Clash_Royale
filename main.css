@@ -1,11 +1,12 @@
 body{
-    width:1200px;
+    width:1000px;
 }
 h1{
     text-align: center;
     margin-bottom: 5%;
 }
 caption{
+    margin-top:10%;
     margin-bottom: 5%;
 }
 table
@@ -21,4 +22,12 @@ th{
 }
 th{
     background-color: lightblue;
+}
+table p{
+    margin-bottom: -5%;
+}
+#deck{
+    /*width:400px;*/
+    margin-top:5%;
+    text-align: center;
 }
