@@ -9,6 +9,9 @@ caption{
     margin-top:10%;
     margin-bottom: 5%;
 }
+a{
+    text-decoration: none;
+}
 table
 {
     width:400px;
@@ -31,3 +34,18 @@ table p{
     margin-top:5%;
     text-align: center;
 }
+img{
+    width:85px;
+    height:auto;
+    /*margin:0 auto;*/
+}
+#deck{
+    display:flex;
+    width : 400px;
+    margin-left:33%;
+    flex-wrap:wrap;
+}
+.change{
+    cursor:wait;
+}
+

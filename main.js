@@ -20,6 +20,12 @@ $(function () {
 
 
         $('a').on('click',function(){
+            $(this).addClass('change')
+
+            
+            $('#name').hide(999)
+            $('#deck').hide(999)
+            $('#liste1').hide(999)
 
 
             var data = $(this).attr("data-tag");
@@ -37,11 +43,20 @@ $(function () {
 
                 console.log(response.currentDeck)
 
-                $('#liste1').empty().append("<tr><td>" + response.games.winsPercent + "</td><td>" + response.games.wins + "</td><td>"+ response.games.total + "</td></tr>");
-                $('#name').empty().append(response.name + '<br>')
+                $('#liste1').empty().append("<tr><td>" + response.games.winsPercent + "</td><td>" + response.games.wins + "</td><td>"+ response.games.total + "</td></tr>").fadeIn(999);
+                $('#name').empty().append(response.name + '<br>').fadeIn(999)
 
-            });
+                $('#deck').empty().append("<img src='" + response.currentDeck[0].icon + " '/>" +
+                    "<img src='" + response.currentDeck[1].icon + " '/>" +
+                    "<img src='" + response.currentDeck[2].icon + " '/>" +
+                    "<img src='" + response.currentDeck[3].icon + " '/>" +
+                    "<img src='" + response.currentDeck[4].icon + " '/>" +
+                    "<img src='" + response.currentDeck[5].icon + " '/>" +
+                    "<img src='" + response.currentDeck[6].icon + " '/>" +
+                    "<img src='" + response.currentDeck[7].icon + " '/>" ).fadeIn(999)
 
+                $('a.change').removeClass('change')
+            })
         });
 
     })
