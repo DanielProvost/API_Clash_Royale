@@ -68,7 +68,7 @@ $(function () {
         });
     })
 
-
+            $('#myChart').hide(999)
             var settings2 = {
                 "async": true,
                 "crossDomain": true,
@@ -79,6 +79,7 @@ $(function () {
                 }
             };
             $.ajax(settings2).done(function (response){
+                $('#myChart').show(999)
                 var result = []
                 var nom = []
 

@@ -173,21 +173,28 @@ tr:hover {
 article{
     margin-top:10%;
 }
-article p{
-    margin-left: 30%;
-}
+
 #myChart{
     max-width:600px;
-    margin:0 auto;
+    margin-left:25%;
+    background-color: white;
+    border:2px lightblue solid;
 }
 article p{
     margin-left:40%;
-    margin-bottom:5%;
+    margin-bottom:3%;
 }
 
 @media (max-width: 1000px){
     #consigne{
         margin-top: 10%;
         margin-left: 25%;
+    }
+    #myChart{
+        margin-left:0%;
+    }
+    article p{
+        margin-left:20%;
+        margin-bottom:5%;
     }
 }
