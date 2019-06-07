@@ -5,32 +5,52 @@
     <meta charset="utf-8">
     <Title>Cr Project</Title>
     <script src ='jquery.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
     <link rel="stylesheet" href="main.css"/>
 
 </head>
 
 <body>
-    <main>
 
-        <h1>Utilisation de l' Api de Clash Royale</h1>
+        <header>
+            <h1>Utilisation de l' Api de Clash Royale</h1>
+        </header>
+
+        <main>
+
+            <div>
+                <table id="first">
+                <caption><strong>Les 10 premiers joueurs au monde !<br>En temps réel !</strong></caption>
+                <thead><tr><th>Rank</th><th>Players</th><th>Trophies</th></tr></thead>
+                <tbody id="liste"></tbody>
+                </table>
+            </div>
+
+            <div>
+                <p id="consigne">Sélectionne un joueur pour voir ses statistiques!</p>
+
+                <table id="toHide">
+                    <caption><p id="name"></p></caption>
+                    <thead><tr><th>% Wins</th><th>Nbr Win</th><th>Nbr Game</th></tr></thead>
+                    <tbody id = "liste1"></tbody>
+                </table>
 
 
-        <table>
-            <caption><strong>Les 10 premiers joueurs au monde !<br>En temps réel !<br><small>(Sélectionne un joueur)</small></strong></caption>
-            <thead><tr><th>Rank</th><th>Players</th><th>Trophies</th></tr></thead>
 
-            <tbody id="liste"></tbody>
-        </table>
+                <div id="container"><p><strong>Son deck !!!</strong></p> <div id="deck"></div> </div>
+            </div>
 
-        <table >
-            <caption ><strong>Les statistiques du joueur sélectionné et son deck:</strong><p id ="name"></p><br></caption>
-            <thead><tr><th>% Wins</th><th>Nbr Win</th><th>Nbr Game</th></tr></thead>
-            <tbody id = "liste1"></tbody>
-        </table>
+        </main>
 
-        <div id="deck"></div>
+        <article>
 
-    </main>
+            <p><strong>Les 8 joueurs les plus populaires !</strong></p>
+
+            <canvas id="myChart" width="600" height="400"></canvas>
+
+        </article>
+
+
 
     <script src="main.js"></script>
 </body>
